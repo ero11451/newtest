@@ -12,7 +12,7 @@ router.post("/",async (req, res, next)=>{
     userModel.create({firstName: firstName, lastName: lastName,phoneNumber:phoneNumber,Age:Age}).catch(error => {
                    res.send(`${error}`)
               }).then(
-                 res.send(`${firstName}`)
+                 res.send(`${firstName},${lastName},${phoneNumber},${Age}`)
               )
  })
 

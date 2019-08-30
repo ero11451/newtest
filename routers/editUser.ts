@@ -12,7 +12,7 @@ router.put("/", async (req,res,next,)=>{
       }).catch(error => {
         res.send(`${error}`)
    }).then(
-        res.send(`${firstName} was updated  thank vary much`)
+        res.send(`${firstName},${lastName},${phoneNumber},${Age} was updated  thank vary much`)
    )
     })
 
