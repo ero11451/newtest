@@ -9,7 +9,7 @@ router.post("/",async (req, res, next)=>{
     const lastName  = req.body.lastName || randomName ;
     const phoneNumber = req.body.phoneNumber;
     const Age  = req.body.Age;
-    userModel.create({firstName: firstName, lastName: lastName,phoneNumber:phoneNumber,Age:Age}).catch(error => {
+    await userModel.create({firstName: firstName, lastName: lastName,phoneNumber:phoneNumber,Age:Age}).catch(error => {
                    res.send(`${error}`)
               }).then(
                  res.send(`${firstName},${lastName},${phoneNumber},${Age}`)
