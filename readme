@@ -21,6 +21,7 @@ Install all package dependencies (one time operation)
 
 ```shell
 npm install
+npm install nodmon
 ```
 
 ## Run It
@@ -48,7 +49,7 @@ npm start
   ```shell
   curl http://localhost:3000/
   ```
-## my endpoint are 
+## to access the endpoint  
     * /edit 
     * /Get
     * /delete
