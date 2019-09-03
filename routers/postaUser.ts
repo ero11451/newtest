@@ -1,3 +1,5 @@
+import { logger } from "../logger";
+
 const express = require('express')
 const router = express.Router()
 const userModel = require("../db/userModels");
@@ -10,9 +12,11 @@ router.post("/",async (req, res, next)=>{
     const phoneNumber = req.body.phoneNumber;
     const Age  = req.body.Age;
     await userModel.create({firstName: firstName, lastName: lastName,phoneNumber:phoneNumber,Age:Age}).catch(error => {
-                   res.send(`${error}`)
-              }).then(
-                 res.send(`${firstName},${lastName},${phoneNumber},${Age}`)
+                logger.error(error)  
+                res.send(`${error}`)
+              }).then((user)=>{
+                 res.send(user)
+               }
               )
  })
 
