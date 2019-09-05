@@ -33,7 +33,7 @@ npm run watch
 ```
 
 
-#### Run in *production* mode:
+#### Run in *production* node:
 
 Compiles the application and starts it in production mode.
 
@@ -50,10 +50,9 @@ npm start
   curl http://localhost:3000/
   ```
 ## to access the endpoint  
-    * /edit 
-    * /Get
-    * /delete
-    * /post
+    * /login
+    * /register
+    * /home
 #### Debug with VSCode
 
 Add these [contents](https://github.com/thecodearcher/node-typescript/blob/master/.vscode/launch.json) to your `.vscode/launch.json` file
