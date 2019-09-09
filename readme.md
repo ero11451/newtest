@@ -27,7 +27,7 @@ npm run watch
  ## for login
 
        - /login post methor :
-       - this will send you a bearerToken which you will, give you access to home page
+       - this will send you a bearerToken which will give you access to home page
          
 ## register
      - /register 
